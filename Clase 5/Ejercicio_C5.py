@@ -12,6 +12,7 @@ Tu tarea para esta semana es la siguiente:
 
 mes = 1
 total = 0
+cantidad = 0
 
 while mes <= 6:
     ingreso = int(input(f"Ingresa tu sueldo del mes {mes}: $"))
@@ -20,7 +21,9 @@ while mes <= 6:
         continue
     total += ingreso
     mes += 1
+    cantidad += 1
 
 print(f"Tus ingresos fueron: ${total}")
+print(f"Promedio: {total // cantidad}")
 
 
