@@ -10,3 +10,17 @@ Tu tarea para esta semana es la siguiente:
 2. Calcular el total acumulado durante los 6 meses y el promedio mensual.
     Mostrá este resultado al final del programa. '''
 
+mes = 1
+total = 0
+
+while mes <= 6:
+    ingreso = int(input(f"Ingresa tu sueldo del mes {mes}: $"))
+    if ingreso < 0:
+        print("El numero es negativo. Intenta de nuevo.")
+        continue
+    total += ingreso
+    mes += 1
+
+print(f"Tus ingresos fueron: ${total}")
+
+
